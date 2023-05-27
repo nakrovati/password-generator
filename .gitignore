@@ -1,0 +1,20 @@
+# Node dependencies
+node_modules
+
+# Nuxt dev/build outputs
+.nuxt
+.nitro
+.cache
+.output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# IDE
+.vscode/*
+.idea/*
