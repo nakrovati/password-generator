@@ -8,8 +8,8 @@
     "preview": "nuxt preview",
     "test": "vitest --run",
     "test:watch": "vitest",
-    "lint": "eslint --ext .ts,.vue .",
-    "lint:fix": "eslint --ext .ts,.vue --fix .",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint:fix": "eslint --ext .js,.ts,.vue --fix .",
     "format": "prettier --write .",
     "postinstall": "nuxt prepare"
   },

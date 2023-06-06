@@ -4,8 +4,8 @@
     "es2022": true,
     "node": true
   },
+  "extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
   "parserOptions": {
     "sourceType": "module"
-  },
-  "extends": ["@nuxtjs/eslint-config-typescript", "prettier"]
+  }
 }
