@@ -1,3 +1,9 @@
+<script setup>
+useServerSeoMeta({
+  title: "404 | Page Not Found",
+});
+</script>
+
 <template>
   <div class="h-full min-h-screen bg-slate-50">
     <div class="flex flex-col">
