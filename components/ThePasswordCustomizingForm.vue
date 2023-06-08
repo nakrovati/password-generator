@@ -44,15 +44,18 @@ function handleLengthChange() {
 <template>
   <section class="mx-auto w-full px-4 lg:max-w-4xl">
     <form
-      class="mx-auto rounded-md border-2 p-4 shadow-sm"
+      class="mx-auto rounded-md border-2 p-4 shadow-sm dark:border-transparent dark:bg-zinc-800 dark:shadow-none"
       @submit.prevent="handleLengthChange"
     >
-      <h3 class="col-span-full mb-8 text-2xl font-bold">
+      <h3 class="col-span-full mb-8 text-2xl font-bold dark:text-white">
         Password customization
       </h3>
       <div class="grid gap-8 sm:grid-cols-2">
         <div>
-          <label for="password-length" class="mb-4 block text-lg">
+          <label
+            for="password-length"
+            class="mb-4 block text-lg dark:text-white"
+          >
             Password length</label
           >
           <div class="flex items-center gap-4">
@@ -63,7 +66,7 @@ function handleLengthChange() {
               min="1"
               max="128"
               step="1"
-              class="rounded-md border-2 p-2 text-center text-lg shadow-sm"
+              class="rounded-md border-2 bg-inherit p-2 text-center text-lg shadow-sm dark:border-transparent dark:bg-zinc-700 dark:text-white"
               @change="handleLengthChange"
             />
             <label class="w-full">
@@ -80,7 +83,7 @@ function handleLengthChange() {
           </div>
         </div>
         <div class="flex flex-col gap-2">
-          <label class="flex items-center gap-2">
+          <label class="flex items-center gap-2 dark:text-white">
             <input
               v-model="passwordOptions.uppercase"
               type="checkbox"
@@ -89,7 +92,7 @@ function handleLengthChange() {
             Uppercase
           </label>
 
-          <label class="flex items-center gap-2">
+          <label class="flex items-center gap-2 dark:text-white">
             <input
               v-model="passwordOptions.lowercase"
               type="checkbox"
@@ -98,7 +101,7 @@ function handleLengthChange() {
             Lowercase
           </label>
 
-          <label class="flex items-center gap-2">
+          <label class="flex items-center gap-2 dark:text-white">
             <input
               v-model="passwordOptions.numbers"
               type="checkbox"
@@ -107,7 +110,7 @@ function handleLengthChange() {
             Numbers
           </label>
 
-          <label class="flex items-center gap-2">
+          <label class="flex items-center gap-2 dark:text-white">
             <input
               v-model="passwordOptions.symbols"
               type="checkbox"
